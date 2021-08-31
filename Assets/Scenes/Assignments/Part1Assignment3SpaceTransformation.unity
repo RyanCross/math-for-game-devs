@@ -123,6 +123,36 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &657178298
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 657178299}
+  m_Layer: 0
+  m_Name: origin
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &657178299
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 657178298}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1359999568
 GameObject:
   m_ObjectHideFlags: 0
@@ -177,13 +207,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1988677145}
-  m_LocalRotation: {x: -0, y: -0, z: 0.9374996, w: 0.34798658}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: -2, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 139.272}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!114 &1988677147
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -197,9 +227,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pt: {fileID: 1359999569}
-  ptRelativeToThisObj: {x: -5.7464786, y: -0.98893976, z: 0}
-  currentXAxisDir: {x: -0.75781095, y: 0.6524745, z: 0}
-  currentYAxisDir: {x: -0.6524745, y: -0.75781095, z: 0}
-  scalarProjectionX: -5.746478
-  scalarProjectionY: -5.746478
-  someObjToPointDisplacement: {x: 5, y: -3, z: 0}
+  origin: {fileID: 657178299}
+  ptWorldPos: {x: 3, y: 0, z: 0}
+  ptInLocalSpaceOfThisGameObj: {x: -3.000001, y: -4.9999995, z: 0}
+  ptInLocalSpaceOfThisGameObjManual: {x: -3.000001, y: -5, z: 0}
+  originLocalSpace: {x: -3.0000005, y: -1.9999999, z: 0}
+  ptBackToWorldSpace: {x: 3.0000005, y: -0.0000009536743, z: 0}
+  ptBackToWorldSpaceManual: {x: -3.000001, y: -4.9999995, z: 0}
